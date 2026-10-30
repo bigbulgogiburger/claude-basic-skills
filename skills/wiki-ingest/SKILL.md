@@ -110,6 +110,8 @@ Copy-Item -LiteralPath "$HOME\Downloads\Receipt2333.pdf" -Destination "D:\위키
 
 log 는 다음 세션이 진실원본으로 읽는다. "한 줄"보다 **판단 근거**(왜 그 폴더인지, 무엇을 검증했는지, 무엇이 미결인지)가 남아 있어야 같은 판단을 반복하지 않는다.
 
+log.md 는 수천 줄로 커지기 쉽다. 덧붙이거나 고칠 때 **파일의 줄바꿈 형식(CRLF/LF)을 바꾸지 않는다** — 방법은 `references/wiki-rules.md` 「줄바꿈 형식」.
+
 앵커 링크(`#...`)는 손으로 짜지 않는다: `python scripts/slug.py "제목"` / `python scripts/slug.py --file <md>`. 제목을 고치면 그 제목을 가리키는 링크가 전부 깨진다.
 
 ## ⑤ 스키마 진화
